@@ -26,10 +26,11 @@ class UsersRepository implements IUsersRepository {
       email,
       created_at: new Date(),
       updated_at: new Date(),
-      admin: false,
     });
 
     this.users.push(user);
+
+    return user;
   }
 
   findById(id: string): User | undefined {
@@ -45,11 +46,12 @@ class UsersRepository implements IUsersRepository {
   }
 
   turnAdmin(receivedUser: User): User {
-    const user = this.users.find((user) => user === receivedUser);
+    Object.assign(receivedUser, {
+      admin: true,
+      updated_at: new Date(),
+    });
 
-    user.admin = true;
-
-    return user;
+    return receivedUser;
   }
 
   list(): User[] {
