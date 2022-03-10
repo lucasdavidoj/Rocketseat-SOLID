@@ -1,26 +1,26 @@
 # Rocketseat-SOLID
 
-Esta é uma API Rest desenvolvida como desafio ao longo do bootcamp de NodeJS da Rocketseat.
+This is a Rest API developed as a challenge over the course of Rocketseat's NodeJS bootcamp.
 
-## :screwdriver: Setup
+## 🧰 Setup
 
 ```bash
 yarn
-# ou
+# or
 npm install
 ```
 
-## :rocket: Run
+## 🚀 Run
 
 ```bash
 yarn dev
-# ou
+# or
 npm run dev
 
-# A aplicação iniciará em:
+# The application will start on:
 http://localhost:3333/
 
-# A documentação poderá ser acessada em:
+# The docs can be accessed at:
 http://localhost:3333/api-docs/
 ```
 
